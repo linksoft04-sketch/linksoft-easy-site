@@ -39,14 +39,6 @@ const AboutSection = () => (
         ))}
       </div>
 
-      <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
-        {stats.map(({ value, label }, i) => (
-          <motion.div key={label} initial={{ opacity: 0, scale: 0.9 }} whileInView={{ opacity: 1, scale: 1 }} viewport={{ once: true }} transition={{ delay: i * 0.1 }} className="text-center p-6 rounded-2xl bg-card border border-border">
-            <div className="text-3xl md:text-4xl font-heading font-bold text-gradient mb-2">{value}</div>
-            <p className="text-sm text-muted-foreground">{label}</p>
-          </motion.div>
-        ))}
-      </div>
     </div>
   </section>
 );

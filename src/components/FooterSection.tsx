@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const FooterSection = () => (
   <footer className="section-gradient py-16">
     <div className="container mx-auto px-4">
@@ -19,9 +21,10 @@ const FooterSection = () => (
         <div>
           <h4 className="font-heading font-semibold text-primary-foreground mb-4">Useful Links</h4>
           <ul className="space-y-2 text-sm text-primary-foreground/60">
-            {["Privacy Policy", "Terms & Conditions", "Disclaimer", "Support"].map((l) => (
-              <li key={l}><button className="hover:text-primary-foreground transition-colors">{l}</button></li>
-            ))}
+            <li><Link to="/privacy-policy" className="hover:text-primary-foreground transition-colors">Privacy Policy</Link></li>
+            <li><Link to="/terms-of-service" className="hover:text-primary-foreground transition-colors">Terms & Conditions</Link></li>
+            <li><button className="hover:text-primary-foreground transition-colors">Disclaimer</button></li>
+            <li><button className="hover:text-primary-foreground transition-colors">Support</button></li>
           </ul>
         </div>
       </div>

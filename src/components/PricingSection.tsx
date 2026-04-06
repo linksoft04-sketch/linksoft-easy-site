@@ -11,37 +11,20 @@ const PricingSection = () => (
         </p>
       </motion.div>
 
-      <div className="grid md:grid-cols-2 gap-8 max-w-3xl mx-auto">
-        {[
-          { name: "Personal", features: ["Basic Advice", "Auto Investing", "No Account Limits", "Cashback Guarantee", "24/7 Customer Support"], highlighted: false },
-          { name: "Premium", features: ["Professional Advice", "Auto Investing", "No Account Limits", "Cashback Guarantee", "24/7 Customer Support"], highlighted: true },
-        ].map(({ name, features, highlighted }, i) => (
-          <motion.div
-            key={name}
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ delay: i * 0.15 }}
-            className={`rounded-2xl p-8 border ${highlighted ? "section-gradient border-secondary/30 text-primary-foreground" : "bg-card border-border text-foreground"}`}
-          >
-            <h3 className="text-2xl font-heading font-bold mb-4">{name}</h3>
-            <ul className="space-y-3 mb-8">
-              {features.map((f) => (
-                <li key={f} className={`text-sm flex items-center gap-2 ${highlighted ? "text-primary-foreground/80" : "text-muted-foreground"}`}>
-                  <span className={`w-1.5 h-1.5 rounded-full ${highlighted ? "bg-accent" : "bg-secondary"}`} />
-                  {f}
-                </li>
-              ))}
-            </ul>
-            <Button
-              className={`w-full ${highlighted ? "bg-accent text-accent-foreground hover:bg-accent/90" : "bg-primary text-primary-foreground hover:bg-primary/90"}`}
-              onClick={() => document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" })}
-            >
-              Contact Us
-            </Button>
-          </motion.div>
-        ))}
-      </div>
+      <motion.div initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="max-w-xl mx-auto rounded-2xl p-8 section-gradient border border-secondary/30 text-primary-foreground">
+        <h3 className="text-2xl font-heading font-bold mb-6 text-center">What We Offer</h3>
+        <ul className="space-y-3 mb-8">
+          {["Professional Advice", "Auto Investing", "No Account Limits", "Cashback Guarantee", "24/7 Customer Support"].map((f) => (
+            <li key={f} className="text-sm flex items-center gap-2 text-primary-foreground/80">
+              <span className="w-1.5 h-1.5 rounded-full bg-accent" />
+              {f}
+            </li>
+          ))}
+        </ul>
+        <Button className="w-full bg-accent text-accent-foreground hover:bg-accent/90" onClick={() => document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" })}>
+          Contact Us
+        </Button>
+      </motion.div>
     </div>
   </section>
 );

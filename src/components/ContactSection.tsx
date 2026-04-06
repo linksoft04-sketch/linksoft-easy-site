@@ -50,7 +50,7 @@ const ContactSection = () => {
               </div>
               <div>
                 <h4 className="font-heading font-semibold text-foreground">Address</h4>
-                <p className="text-sm text-muted-foreground">Room No 223, Hoor Center, 2nd Floor, Near Medicine Market, opposite Bank Al Habib, North Napier Road, Karachi.</p>
+                <p className="text-sm text-muted-foreground">Office No 223, Hoor Center, 2nd Floor, Near Medicine Market, opposite Bank Al Habib, North Napier Road, Karachi.</p>
               </div>
             </div>
           </motion.div>

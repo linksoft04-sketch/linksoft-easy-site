@@ -21,7 +21,7 @@ const HeroSection = () => (
             ✦ Introducing LinkSoft
           </span>
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-heading font-bold leading-tight text-primary-foreground mb-6">
-            Secured One-Click Checkout Solution for{" "}
+            Secured One-Click Checkout Solution for your{" "}
             <span className="text-accent">Businesses</span>
           </h1>
           <p className="text-lg text-primary-foreground/70 max-w-lg mb-8">

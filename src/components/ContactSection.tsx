@@ -32,7 +32,7 @@ const ContactSection = () => {
               </div>
               <div>
                 <h4 className="font-heading font-semibold text-foreground">Our Email</h4>
-                <p className="text-sm text-muted-foreground">info@linksoft.com</p>
+                <p className="text-sm text-muted-foreground">link.soft04@gmail.com</p>
               </div>
             </div>
             <div className="flex items-start gap-4">
@@ -41,7 +41,7 @@ const ContactSection = () => {
               </div>
               <div>
                 <h4 className="font-heading font-semibold text-foreground">Contact No.</h4>
-                <p className="text-sm text-muted-foreground">0329-108-3073</p>
+                <p className="text-sm text-muted-foreground">03027839175</p>
               </div>
             </div>
             <div className="flex items-start gap-4">
@@ -50,7 +50,7 @@ const ContactSection = () => {
               </div>
               <div>
                 <h4 className="font-heading font-semibold text-foreground">Address</h4>
-                <p className="text-sm text-muted-foreground">Office No 223, Hoor Center, 2nd Floor, Near Medicine Market, opposite Bank Al Habib, North Napier Road, Karachi.</p>
+                <p className="text-sm text-muted-foreground">Flat No. 1-A, First Floor, Plot No. 25-C, Street 1, Badar Commercial, Pakistan</p>
               </div>
             </div>
           </motion.div>

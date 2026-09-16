@@ -6,6 +6,7 @@ import GoalsSection from "@/components/GoalsSection";
 import CollectionsSection from "@/components/CollectionsSection";
 import PricingSection from "@/components/PricingSection";
 import ContactSection from "@/components/ContactSection";
+import FaqSection from "@/components/FaqSection";
 import FooterSection from "@/components/FooterSection";
 
 const Index = () => (

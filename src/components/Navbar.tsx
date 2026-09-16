@@ -18,7 +18,7 @@ const Navbar = () => {
         </span>
 
         <div className="hidden md:flex items-center gap-8">
-          {["Home", "Products", "About", "Pricing", "Contact"].map((item) => (
+          {["Home", "Products", "About", "Pricing", "FAQs", "Contact"].map((item) => (
             <button
               key={item}
               onClick={() => scrollTo(item.toLowerCase() === "home" ? "hero" : item.toLowerCase())}
@@ -39,7 +39,7 @@ const Navbar = () => {
 
       {isOpen && (
         <div className="md:hidden bg-card border-b border-border px-4 pb-4 space-y-3">
-          {["Home", "Products", "About", "Pricing", "Contact"].map((item) => (
+          {["Home", "Products", "About", "Pricing", "FAQs", "Contact"].map((item) => (
             <button
               key={item}
               onClick={() => scrollTo(item.toLowerCase() === "home" ? "hero" : item.toLowerCase())}
